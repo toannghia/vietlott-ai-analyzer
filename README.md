@@ -50,13 +50,17 @@ Sử dụng kiến trúc **Ensemble Learning** kết hợp 3 mô hình học má
 ## 📸 Hình ảnh minh họa
 
 ### Giao diện Dashboard & Dự báo Ensemble
-![Dashboard Ensemble](/Users/macbook/.gemini/antigravity/brain/50c55ebe-99ad-4db1-87ff-e23e03dc6f96/final_ensemble_sets_all_1771889974397.png)
+![Dashboard Ensemble]
+<img width="3456" height="3664" alt="screencapture-localhost-3000-dashboard-2026-02-24-07_40_38" src="https://github.com/user-attachments/assets/01b5ebf7-430e-4145-b1c4-3fe7de6babdb" />
+
 
 ### Đối chiếu kết quả lịch sử
-![History Viewer](/Users/macbook/.gemini/antigravity/brain/50c55ebe-99ad-4db1-87ff-e23e03dc6f96/dashboard_prediction_history_01474_1771859184137.png)
+<img width="474" height="354" alt="Screenshot 2026-02-24 at 08 34 43" src="https://github.com/user-attachments/assets/3b4470ad-d3c2-4f47-b46f-47bbfdde7731" />
+
 
 ### Quản lý người dùng
-![User Management](/Users/macbook/.gemini/antigravity/brain/50c55ebe-99ad-4db1-87ff-e23e03dc6f96/admin_users_topbar_1771840587140.png)
+![Uploading Screenshot 2026-02-24 at 08.33.59.png…]()
+
 
 ---
 
