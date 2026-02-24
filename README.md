@@ -59,7 +59,7 @@ Sử dụng kiến trúc **Ensemble Learning** kết hợp 3 mô hình học má
 
 
 ### Quản lý người dùng
-![Uploading Screenshot 2026-02-24 at 08.33.59.png…]()
+<img width="1261" height="531" alt="Screenshot 2026-02-24 at 08 33 59" src="https://github.com/user-attachments/assets/b03ed33d-6a92-4645-b89f-0197e8848fca" />
 
 
 ---
