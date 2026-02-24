@@ -1,0 +1,612 @@
+2026-02-23 09:49:28,621 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+INFO:sqlalchemy.engine.Engine:select pg_catalog.version()
+2026-02-23 09:49:28,621 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2026-02-23 09:49:28,624 INFO sqlalchemy.engine.Engine select current_schema()
+INFO:sqlalchemy.engine.Engine:select current_schema()
+2026-02-23 09:49:28,624 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2026-02-23 09:49:28,626 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+INFO:sqlalchemy.engine.Engine:show standard_conforming_strings
+2026-02-23 09:49:28,626 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2026-02-23 09:49:28,628 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2026-02-23 09:49:28,630 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,630 INFO sqlalchemy.engine.Engine [generated in 0.00016s] ('01310', 'power655')
+INFO:sqlalchemy.engine.Engine:[generated in 0.00016s] ('01310', 'power655')
+2026-02-23 09:49:28,653 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,653 INFO sqlalchemy.engine.Engine [cached since 0.02234s ago] ('01309', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02234s ago] ('01309', 'power655')
+2026-02-23 09:49:28,653 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,654 INFO sqlalchemy.engine.Engine [cached since 0.02324s ago] ('01308', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02324s ago] ('01308', 'power655')
+2026-02-23 09:49:28,654 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,654 INFO sqlalchemy.engine.Engine [cached since 0.02397s ago] ('01307', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02397s ago] ('01307', 'power655')
+2026-02-23 09:49:28,655 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,655 INFO sqlalchemy.engine.Engine [cached since 0.02465s ago] ('01306', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02465s ago] ('01306', 'power655')
+2026-02-23 09:49:28,656 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,656 INFO sqlalchemy.engine.Engine [cached since 0.02526s ago] ('01305', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02526s ago] ('01305', 'power655')
+2026-02-23 09:49:28,656 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,656 INFO sqlalchemy.engine.Engine [cached since 0.02598s ago] ('01304', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02598s ago] ('01304', 'power655')
+2026-02-23 09:49:28,657 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,657 INFO sqlalchemy.engine.Engine [cached since 0.02678s ago] ('01303', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02678s ago] ('01303', 'power655')
+2026-02-23 09:49:28,658 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,658 INFO sqlalchemy.engine.Engine [cached since 0.02758s ago] ('01302', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02758s ago] ('01302', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01302&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01302 not found. Skipping.
+2026-02-23 09:49:28,659 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,659 INFO sqlalchemy.engine.Engine [cached since 0.02844s ago] ('01301', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02844s ago] ('01301', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01301&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01301 not found. Skipping.
+2026-02-23 09:49:28,659 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,660 INFO sqlalchemy.engine.Engine [cached since 0.0292s ago] ('01300', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.0292s ago] ('01300', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01300&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01300 not found. Skipping.
+2026-02-23 09:49:28,660 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,660 INFO sqlalchemy.engine.Engine [cached since 0.02986s ago] ('01299', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02986s ago] ('01299', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01299&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01299 not found. Skipping.
+2026-02-23 09:49:28,661 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,661 INFO sqlalchemy.engine.Engine [cached since 0.03064s ago] ('01298', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03064s ago] ('01298', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01298&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01298 not found. Skipping.
+2026-02-23 09:49:28,662 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,662 INFO sqlalchemy.engine.Engine [cached since 0.0313s ago] ('01297', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.0313s ago] ('01297', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01297&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01297 not found. Skipping.
+2026-02-23 09:49:28,662 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,662 INFO sqlalchemy.engine.Engine [cached since 0.03184s ago] ('01296', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03184s ago] ('01296', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01296&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01296 not found. Skipping.
+2026-02-23 09:49:28,663 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,663 INFO sqlalchemy.engine.Engine [cached since 0.03258s ago] ('01295', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03258s ago] ('01295', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01295&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01295 not found. Skipping.
+2026-02-23 09:49:28,664 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,664 INFO sqlalchemy.engine.Engine [cached since 0.03325s ago] ('01294', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03325s ago] ('01294', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01294&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01294 not found. Skipping.
+2026-02-23 09:49:28,664 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,664 INFO sqlalchemy.engine.Engine [cached since 0.03386s ago] ('01293', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03386s ago] ('01293', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01293&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01293 not found. Skipping.
+2026-02-23 09:49:28,665 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,665 INFO sqlalchemy.engine.Engine [cached since 0.03456s ago] ('01292', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03456s ago] ('01292', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01292&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01292 not found. Skipping.
+2026-02-23 09:49:28,666 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,666 INFO sqlalchemy.engine.Engine [cached since 0.03577s ago] ('01291', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03577s ago] ('01291', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01291&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01291 not found. Skipping.
+2026-02-23 09:49:28,667 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,667 INFO sqlalchemy.engine.Engine [cached since 0.03662s ago] ('01290', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03662s ago] ('01290', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01290&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01290 not found. Skipping.
+2026-02-23 09:49:28,668 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,668 INFO sqlalchemy.engine.Engine [cached since 0.03792s ago] ('01289', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03792s ago] ('01289', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01289&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01289 not found. Skipping.
+2026-02-23 09:49:28,669 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,669 INFO sqlalchemy.engine.Engine [cached since 0.03891s ago] ('01288', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03891s ago] ('01288', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01288&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01288 not found. Skipping.
+2026-02-23 09:49:28,670 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,670 INFO sqlalchemy.engine.Engine [cached since 0.03981s ago] ('01287', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03981s ago] ('01287', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01287&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01287 not found. Skipping.
+2026-02-23 09:49:28,671 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,671 INFO sqlalchemy.engine.Engine [cached since 0.04045s ago] ('01286', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04045s ago] ('01286', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01286&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01286 not found. Skipping.
+2026-02-23 09:49:28,671 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,671 INFO sqlalchemy.engine.Engine [cached since 0.04111s ago] ('01285', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04111s ago] ('01285', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01285&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01285 not found. Skipping.
+2026-02-23 09:49:28,672 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,672 INFO sqlalchemy.engine.Engine [cached since 0.04185s ago] ('01284', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04185s ago] ('01284', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01284&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01284 not found. Skipping.
+2026-02-23 09:49:28,673 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,673 INFO sqlalchemy.engine.Engine [cached since 0.04262s ago] ('01283', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04262s ago] ('01283', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01283&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01283 not found. Skipping.
+2026-02-23 09:49:28,674 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,674 INFO sqlalchemy.engine.Engine [cached since 0.04381s ago] ('01282', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04381s ago] ('01282', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01282&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01282 not found. Skipping.
+2026-02-23 09:49:28,675 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,675 INFO sqlalchemy.engine.Engine [cached since 0.04456s ago] ('01281', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04456s ago] ('01281', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01281&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01281 not found. Skipping.
+2026-02-23 09:49:28,675 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,675 INFO sqlalchemy.engine.Engine [cached since 0.04513s ago] ('01280', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04513s ago] ('01280', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01280&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01280 not found. Skipping.
+2026-02-23 09:49:28,676 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,676 INFO sqlalchemy.engine.Engine [cached since 0.04577s ago] ('01279', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04577s ago] ('01279', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01279&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01279 not found. Skipping.
+2026-02-23 09:49:28,677 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,677 INFO sqlalchemy.engine.Engine [cached since 0.04699s ago] ('01278', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04699s ago] ('01278', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01278&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01278 not found. Skipping.
+2026-02-23 09:49:28,678 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,678 INFO sqlalchemy.engine.Engine [cached since 0.0479s ago] ('01277', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.0479s ago] ('01277', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01277&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01277 not found. Skipping.
+2026-02-23 09:49:28,679 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,679 INFO sqlalchemy.engine.Engine [cached since 0.04857s ago] ('01276', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04857s ago] ('01276', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01276&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01276 not found. Skipping.
+2026-02-23 09:49:28,680 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,680 INFO sqlalchemy.engine.Engine [cached since 0.04929s ago] ('01275', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04929s ago] ('01275', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01275&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01275 not found. Skipping.
+2026-02-23 09:49:28,680 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,680 INFO sqlalchemy.engine.Engine [cached since 0.05001s ago] ('01274', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05001s ago] ('01274', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01274&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01274 not found. Skipping.
+2026-02-23 09:49:28,681 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,681 INFO sqlalchemy.engine.Engine [cached since 0.05056s ago] ('01273', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05056s ago] ('01273', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01273&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01273 not found. Skipping.
+2026-02-23 09:49:28,681 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,681 INFO sqlalchemy.engine.Engine [cached since 0.05112s ago] ('01272', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05112s ago] ('01272', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01272&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01272 not found. Skipping.
+2026-02-23 09:49:28,682 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,682 INFO sqlalchemy.engine.Engine [cached since 0.05186s ago] ('01271', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05186s ago] ('01271', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01271&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01271 not found. Skipping.
+2026-02-23 09:49:28,683 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,683 INFO sqlalchemy.engine.Engine [cached since 0.05251s ago] ('01270', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05251s ago] ('01270', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01270&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01270 not found. Skipping.
+2026-02-23 09:49:28,683 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,683 INFO sqlalchemy.engine.Engine [cached since 0.05308s ago] ('01269', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05308s ago] ('01269', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01269&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01269 not found. Skipping.
+2026-02-23 09:49:28,684 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,684 INFO sqlalchemy.engine.Engine [cached since 0.05366s ago] ('01268', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05366s ago] ('01268', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01268&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01268 not found. Skipping.
+2026-02-23 09:49:28,684 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,685 INFO sqlalchemy.engine.Engine [cached since 0.05417s ago] ('01267', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05417s ago] ('01267', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01267&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01267 not found. Skipping.
+2026-02-23 09:49:28,685 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,685 INFO sqlalchemy.engine.Engine [cached since 0.05469s ago] ('01266', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05469s ago] ('01266', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01266&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01266 not found. Skipping.
+2026-02-23 09:49:28,685 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,686 INFO sqlalchemy.engine.Engine [cached since 0.05519s ago] ('01265', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05519s ago] ('01265', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01265&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01265 not found. Skipping.
+2026-02-23 09:49:28,686 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,686 INFO sqlalchemy.engine.Engine [cached since 0.05573s ago] ('01264', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05573s ago] ('01264', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01264&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01264 not found. Skipping.
+2026-02-23 09:49:28,687 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,687 INFO sqlalchemy.engine.Engine [cached since 0.05626s ago] ('01263', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05626s ago] ('01263', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01263&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01263 not found. Skipping.
+2026-02-23 09:49:28,687 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,687 INFO sqlalchemy.engine.Engine [cached since 0.05686s ago] ('01262', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05686s ago] ('01262', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01262&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01262 not found. Skipping.
+2026-02-23 09:49:28,688 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,688 INFO sqlalchemy.engine.Engine [cached since 0.05736s ago] ('01261', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05736s ago] ('01261', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01261&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01261 not found. Skipping.
+2026-02-23 09:49:28,688 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,688 INFO sqlalchemy.engine.Engine [cached since 0.05791s ago] ('01260', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05791s ago] ('01260', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01260&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01260 not found. Skipping.
+2026-02-23 09:49:28,689 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,689 INFO sqlalchemy.engine.Engine [cached since 0.05843s ago] ('01259', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05843s ago] ('01259', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01259&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01259 not found. Skipping.
+2026-02-23 09:49:28,689 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,689 INFO sqlalchemy.engine.Engine [cached since 0.05892s ago] ('01258', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05892s ago] ('01258', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01258&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01258 not found. Skipping.
+2026-02-23 09:49:28,690 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,690 INFO sqlalchemy.engine.Engine [cached since 0.05937s ago] ('01257', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05937s ago] ('01257', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01257&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01257 not found. Skipping.
+2026-02-23 09:49:28,690 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,690 INFO sqlalchemy.engine.Engine [cached since 0.05999s ago] ('01256', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05999s ago] ('01256', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01256&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01256 not found. Skipping.
+2026-02-23 09:49:28,692 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,692 INFO sqlalchemy.engine.Engine [cached since 0.06124s ago] ('01255', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.06124s ago] ('01255', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01255&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01255 not found. Skipping.
+2026-02-23 09:49:28,692 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,693 INFO sqlalchemy.engine.Engine [cached since 0.0622s ago] ('01254', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.0622s ago] ('01254', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01254&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01254 not found. Skipping.
+2026-02-23 09:49:28,694 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,694 INFO sqlalchemy.engine.Engine [cached since 0.06335s ago] ('01253', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.06335s ago] ('01253', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01253&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01253 not found. Skipping.
+2026-02-23 09:49:28,695 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,695 INFO sqlalchemy.engine.Engine [cached since 0.06422s ago] ('01252', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.06422s ago] ('01252', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01252&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01252 not found. Skipping.
+2026-02-23 09:49:28,695 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,695 INFO sqlalchemy.engine.Engine [cached since 0.06499s ago] ('01251', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.06499s ago] ('01251', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01251&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01251 not found. Skipping.
+2026-02-23 09:49:28,696 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 09:49:28,696 INFO sqlalchemy.engine.Engine [cached since 0.0659s ago] ('01250', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.0659s ago] ('01250', 'power655')
+ERROR:app.services.crawler:Error fetching https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01250&nocatche=1: name 'asyncio' is not defined
+WARNING:__main__:Period 01250 not found. Skipping.
+2026-02-23 09:49:28,697 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+ERROR:app.services.statistics:Error calculating stats: invalid literal for int() with base 10: 'power655'
+INFO:__main__:Finished crawling and updated stats for power655

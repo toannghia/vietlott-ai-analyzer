@@ -1,0 +1,541 @@
+INFO:__main__:Crawling power655 page 1...
+INFO:httpx:HTTP Request: GET https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/winning-number-655?p=1 "HTTP/1.1 200 OK"
+INFO:__main__:Found 8 rows in table.table-hover tbody tr
+2026-02-23 08:48:35,066 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+INFO:sqlalchemy.engine.Engine:select pg_catalog.version()
+2026-02-23 08:48:35,066 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2026-02-23 08:48:35,070 INFO sqlalchemy.engine.Engine select current_schema()
+INFO:sqlalchemy.engine.Engine:select current_schema()
+2026-02-23 08:48:35,070 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2026-02-23 08:48:35,073 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+INFO:sqlalchemy.engine.Engine:show standard_conforming_strings
+2026-02-23 08:48:35,073 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2026-02-23 08:48:35,075 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2026-02-23 08:48:35,078 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 08:48:35,079 INFO sqlalchemy.engine.Engine [generated in 0.00025s] ('01310', 'power655')
+INFO:sqlalchemy.engine.Engine:[generated in 0.00025s] ('01310', 'power655')
+INFO:__main__:Period 01310 already exists. Skipping.
+2026-02-23 08:48:35,115 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.draw_period = $1::VARCHAR AND draw_results.type = $2::VARCHAR
+2026-02-23 08:48:35,115 INFO sqlalchemy.engine.Engine [cached since 0.03701s ago] ('01309', 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03701s ago] ('01309', 'power655')
+INFO:__main__:Fetching detail from https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01309&action=detail
+INFO:httpx:HTTP Request: GET https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01309&action=detail "HTTP/1.1 200 OK"
+INFO:__main__:Added power655 #01309 to session
+2026-02-23 08:48:35,736 INFO sqlalchemy.engine.Engine INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at
+INFO:sqlalchemy.engine.Engine:INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at
+2026-02-23 08:48:35,736 INFO sqlalchemy.engine.Engine [generated in 0.00018s] (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00018s] (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)
+2026-02-23 08:48:35,740 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:__main__:Error processing period 01308: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "ix_draw_results_draw_period"
+DETAIL:  Key (draw_period)=(01310) already exists.
+[SQL: INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at]
+[parameters: (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+ERROR:__main__:Error processing period 01307: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "ix_draw_results_draw_period"
+DETAIL:  Key (draw_period)=(01310) already exists.
+[SQL: INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at]
+[parameters: (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:__main__:Error processing period 01306: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "ix_draw_results_draw_period"
+DETAIL:  Key (draw_period)=(01310) already exists.
+[SQL: INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at]
+[parameters: (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:__main__:Error processing period 01305: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "ix_draw_results_draw_period"
+DETAIL:  Key (draw_period)=(01310) already exists.
+[SQL: INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at]
+[parameters: (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:__main__:Error processing period 01304: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "ix_draw_results_draw_period"
+DETAIL:  Key (draw_period)=(01310) already exists.
+[SQL: INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at]
+[parameters: (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:__main__:Error processing period 01303: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "ix_draw_results_draw_period"
+DETAIL:  Key (draw_period)=(01310) already exists.
+[SQL: INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at]
+[parameters: (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:__main__:Page 1 failed: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "ix_draw_results_draw_period"
+DETAIL:  Key (draw_period)=(01310) already exists.
+[SQL: INSERT INTO draw_results (draw_date, draw_period, numbers, type, jackpot_won, jackpot_value, jackpot_winners, jackpot2_value, jackpot2_winners, first_prize_value, first_prize_winners, second_prize_value, second_prize_winners, third_prize_value, third_prize_winners, raw_html_log) VALUES ($1::DATE, $2::VARCHAR, $3::INTEGER[], $4::VARCHAR, $5::BOOLEAN, $6::BIGINT, $7::INTEGER, $8::BIGINT, $9::INTEGER, $10::BIGINT, $11::INTEGER, $12::BIGINT, $13::INTEGER, $14::BIGINT, $15::INTEGER, $16::VARCHAR) RETURNING draw_results.id, draw_results.created_at]
+[parameters: (datetime.date(2026, 2, 21), '01310', [5, 7, 26, 30, 41, 45, 12], 'power655', False, 72454898500, 0, 4799391950, 0, 40000000, 12, 500000, 1065, 50000, 22171, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-23 08:48:35,773 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2026-02-23 08:48:35,774 INFO sqlalchemy.engine.Engine SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.type = $1::VARCHAR ORDER BY draw_results.draw_date DESC, draw_results.draw_period DESC 
+ LIMIT $2::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT draw_results.id, draw_results.draw_date, draw_results.draw_period, draw_results.numbers, draw_results.type, draw_results.jackpot_won, draw_results.jackpot_value, draw_results.jackpot_winners, draw_results.jackpot2_value, draw_results.jackpot2_winners, draw_results.first_prize_value, draw_results.first_prize_winners, draw_results.second_prize_value, draw_results.second_prize_winners, draw_results.third_prize_value, draw_results.third_prize_winners, draw_results.raw_html_log, draw_results.created_at 
+FROM draw_results 
+WHERE draw_results.type = $1::VARCHAR ORDER BY draw_results.draw_date DESC, draw_results.draw_period DESC 
+ LIMIT $2::INTEGER
+2026-02-23 08:48:35,774 INFO sqlalchemy.engine.Engine [generated in 0.00010s] ('power655', 5000)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00010s] ('power655', 5000)
+2026-02-23 08:48:35,796 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,796 INFO sqlalchemy.engine.Engine [generated in 0.00015s] (1, 'power655')
+INFO:sqlalchemy.engine.Engine:[generated in 0.00015s] (1, 'power655')
+2026-02-23 08:48:35,799 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,799 INFO sqlalchemy.engine.Engine [cached since 0.003326s ago] (2, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.003326s ago] (2, 'power655')
+2026-02-23 08:48:35,800 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,800 INFO sqlalchemy.engine.Engine [cached since 0.004144s ago] (3, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.004144s ago] (3, 'power655')
+2026-02-23 08:48:35,801 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,801 INFO sqlalchemy.engine.Engine [cached since 0.005266s ago] (4, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.005266s ago] (4, 'power655')
+2026-02-23 08:48:35,802 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,802 INFO sqlalchemy.engine.Engine [cached since 0.006218s ago] (5, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.006218s ago] (5, 'power655')
+2026-02-23 08:48:35,803 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,803 INFO sqlalchemy.engine.Engine [cached since 0.007185s ago] (6, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.007185s ago] (6, 'power655')
+2026-02-23 08:48:35,804 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,804 INFO sqlalchemy.engine.Engine [cached since 0.00817s ago] (7, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.00817s ago] (7, 'power655')
+2026-02-23 08:48:35,805 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,805 INFO sqlalchemy.engine.Engine [cached since 0.008951s ago] (8, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.008951s ago] (8, 'power655')
+2026-02-23 08:48:35,806 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,806 INFO sqlalchemy.engine.Engine [cached since 0.009729s ago] (9, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.009729s ago] (9, 'power655')
+2026-02-23 08:48:35,807 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,807 INFO sqlalchemy.engine.Engine [cached since 0.0106s ago] (10, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.0106s ago] (10, 'power655')
+2026-02-23 08:48:35,808 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,808 INFO sqlalchemy.engine.Engine [cached since 0.01143s ago] (11, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.01143s ago] (11, 'power655')
+2026-02-23 08:48:35,809 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,809 INFO sqlalchemy.engine.Engine [cached since 0.01287s ago] (12, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.01287s ago] (12, 'power655')
+2026-02-23 08:48:35,810 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,810 INFO sqlalchemy.engine.Engine [cached since 0.01378s ago] (13, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.01378s ago] (13, 'power655')
+2026-02-23 08:48:35,811 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,811 INFO sqlalchemy.engine.Engine [cached since 0.0147s ago] (14, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.0147s ago] (14, 'power655')
+2026-02-23 08:48:35,812 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,812 INFO sqlalchemy.engine.Engine [cached since 0.01564s ago] (15, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.01564s ago] (15, 'power655')
+2026-02-23 08:48:35,813 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,813 INFO sqlalchemy.engine.Engine [cached since 0.01644s ago] (16, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.01644s ago] (16, 'power655')
+2026-02-23 08:48:35,813 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,813 INFO sqlalchemy.engine.Engine [cached since 0.01727s ago] (17, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.01727s ago] (17, 'power655')
+2026-02-23 08:48:35,814 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,815 INFO sqlalchemy.engine.Engine [cached since 0.01846s ago] (18, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.01846s ago] (18, 'power655')
+2026-02-23 08:48:35,815 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,815 INFO sqlalchemy.engine.Engine [cached since 0.01929s ago] (19, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.01929s ago] (19, 'power655')
+2026-02-23 08:48:35,816 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,816 INFO sqlalchemy.engine.Engine [cached since 0.02026s ago] (20, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02026s ago] (20, 'power655')
+2026-02-23 08:48:35,817 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,817 INFO sqlalchemy.engine.Engine [cached since 0.02128s ago] (21, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02128s ago] (21, 'power655')
+2026-02-23 08:48:35,818 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,818 INFO sqlalchemy.engine.Engine [cached since 0.02215s ago] (22, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02215s ago] (22, 'power655')
+2026-02-23 08:48:35,819 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,819 INFO sqlalchemy.engine.Engine [cached since 0.02298s ago] (23, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02298s ago] (23, 'power655')
+2026-02-23 08:48:35,820 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,820 INFO sqlalchemy.engine.Engine [cached since 0.02392s ago] (24, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02392s ago] (24, 'power655')
+2026-02-23 08:48:35,821 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,821 INFO sqlalchemy.engine.Engine [cached since 0.02477s ago] (25, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02477s ago] (25, 'power655')
+2026-02-23 08:48:35,822 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,822 INFO sqlalchemy.engine.Engine [cached since 0.02573s ago] (26, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02573s ago] (26, 'power655')
+2026-02-23 08:48:35,823 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,823 INFO sqlalchemy.engine.Engine [cached since 0.02732s ago] (27, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02732s ago] (27, 'power655')
+2026-02-23 08:48:35,824 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,824 INFO sqlalchemy.engine.Engine [cached since 0.02818s ago] (28, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02818s ago] (28, 'power655')
+2026-02-23 08:48:35,825 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,825 INFO sqlalchemy.engine.Engine [cached since 0.02906s ago] (29, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02906s ago] (29, 'power655')
+2026-02-23 08:48:35,826 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,826 INFO sqlalchemy.engine.Engine [cached since 0.02985s ago] (30, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.02985s ago] (30, 'power655')
+2026-02-23 08:48:35,827 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,827 INFO sqlalchemy.engine.Engine [cached since 0.03057s ago] (31, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03057s ago] (31, 'power655')
+2026-02-23 08:48:35,828 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,828 INFO sqlalchemy.engine.Engine [cached since 0.03153s ago] (32, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03153s ago] (32, 'power655')
+2026-02-23 08:48:35,829 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,829 INFO sqlalchemy.engine.Engine [cached since 0.03241s ago] (33, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03241s ago] (33, 'power655')
+2026-02-23 08:48:35,829 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,829 INFO sqlalchemy.engine.Engine [cached since 0.03335s ago] (34, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03335s ago] (34, 'power655')
+2026-02-23 08:48:35,830 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,831 INFO sqlalchemy.engine.Engine [cached since 0.03436s ago] (35, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03436s ago] (35, 'power655')
+2026-02-23 08:48:35,831 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,831 INFO sqlalchemy.engine.Engine [cached since 0.03517s ago] (36, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03517s ago] (36, 'power655')
+2026-02-23 08:48:35,832 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,832 INFO sqlalchemy.engine.Engine [cached since 0.036s ago] (37, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.036s ago] (37, 'power655')
+2026-02-23 08:48:35,833 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,833 INFO sqlalchemy.engine.Engine [cached since 0.03732s ago] (38, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03732s ago] (38, 'power655')
+2026-02-23 08:48:35,834 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,834 INFO sqlalchemy.engine.Engine [cached since 0.03814s ago] (39, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03814s ago] (39, 'power655')
+2026-02-23 08:48:35,835 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,835 INFO sqlalchemy.engine.Engine [cached since 0.0389s ago] (40, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.0389s ago] (40, 'power655')
+2026-02-23 08:48:35,836 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,836 INFO sqlalchemy.engine.Engine [cached since 0.03987s ago] (41, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.03987s ago] (41, 'power655')
+2026-02-23 08:48:35,837 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,837 INFO sqlalchemy.engine.Engine [cached since 0.04068s ago] (42, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04068s ago] (42, 'power655')
+2026-02-23 08:48:35,838 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,838 INFO sqlalchemy.engine.Engine [cached since 0.04151s ago] (43, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04151s ago] (43, 'power655')
+2026-02-23 08:48:35,838 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,838 INFO sqlalchemy.engine.Engine [cached since 0.04223s ago] (44, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04223s ago] (44, 'power655')
+2026-02-23 08:48:35,839 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,839 INFO sqlalchemy.engine.Engine [cached since 0.04295s ago] (45, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04295s ago] (45, 'power655')
+2026-02-23 08:48:35,840 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,840 INFO sqlalchemy.engine.Engine [cached since 0.04381s ago] (46, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04381s ago] (46, 'power655')
+2026-02-23 08:48:35,841 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,841 INFO sqlalchemy.engine.Engine [cached since 0.04463s ago] (47, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04463s ago] (47, 'power655')
+2026-02-23 08:48:35,842 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,842 INFO sqlalchemy.engine.Engine [cached since 0.04543s ago] (48, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04543s ago] (48, 'power655')
+2026-02-23 08:48:35,843 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,843 INFO sqlalchemy.engine.Engine [cached since 0.04694s ago] (49, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04694s ago] (49, 'power655')
+2026-02-23 08:48:35,844 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,844 INFO sqlalchemy.engine.Engine [cached since 0.04798s ago] (50, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04798s ago] (50, 'power655')
+2026-02-23 08:48:35,845 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,845 INFO sqlalchemy.engine.Engine [cached since 0.04914s ago] (51, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.04914s ago] (51, 'power655')
+2026-02-23 08:48:35,846 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,846 INFO sqlalchemy.engine.Engine [cached since 0.05004s ago] (52, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05004s ago] (52, 'power655')
+2026-02-23 08:48:35,847 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,847 INFO sqlalchemy.engine.Engine [cached since 0.05079s ago] (53, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05079s ago] (53, 'power655')
+2026-02-23 08:48:35,848 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,848 INFO sqlalchemy.engine.Engine [cached since 0.05154s ago] (54, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05154s ago] (54, 'power655')
+2026-02-23 08:48:35,848 INFO sqlalchemy.engine.Engine SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+INFO:sqlalchemy.engine.Engine:SELECT number_stats.id, number_stats.number, number_stats.type, number_stats.frequency, number_stats.last_seen, number_stats.max_gap, number_stats.current_gap 
+FROM number_stats 
+WHERE number_stats.number = $1::INTEGER AND number_stats.type = $2::VARCHAR
+2026-02-23 08:48:35,849 INFO sqlalchemy.engine.Engine [cached since 0.05239s ago] (55, 'power655')
+INFO:sqlalchemy.engine.Engine:[cached since 0.05239s ago] (55, 'power655')
+2026-02-23 08:48:35,849 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:app.services.statistics:Successfully updated Number Stats for power655.
+INFO:__main__:Finished bulk crawl for power655
