@@ -78,7 +78,7 @@ docker-compose up -d --build
 
 ### 4. Tài khoản mặc định
 - **Email:** `admin@zenpos.vn`
-- **Password:** `123456`
+- **Password:** `[PASSWORD]`
 
 ---
 
